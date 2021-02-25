@@ -4,6 +4,7 @@ import controller.GameController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -11,8 +12,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.RandomNumberGenerator;
-import org.codehaus.plexus.personality.plexus.lifecycle.phase.Initializable;
-import org.codehaus.plexus.personality.plexus.lifecycle.phase.InitializationException;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class GuessMyNumberController implements Initializable {
 
@@ -94,8 +96,7 @@ public class GuessMyNumberController implements Initializable {
     }
 
     @Override
-    public void initialize() throws InitializationException {
-
+    public void initialize(URL location, ResourceBundle resources) {
         if (guesses == DEFAULT_VALUE){
             numberGenerated.setText(Integer.toString(DEFAULT_VALUE));
         }else {
@@ -104,6 +105,5 @@ public class GuessMyNumberController implements Initializable {
 
         displayGuesses.setText(Integer.toString(guesses));
         displayScore.setText(Integer.toString(score));
-
     }
 }
