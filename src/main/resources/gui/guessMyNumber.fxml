@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GuessMyNumberController">
    <children>
       <Label alignment="CENTER" prefHeight="51.0" prefWidth="600.0" text="Guess My Number" textFill="#ff0400">
@@ -69,7 +68,7 @@
                   <Insets right="50.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#playAgain" text="Play Again">
+            <Button mnemonicParsing="false" onAction="#playAgain" text="Reset">
                <HBox.margin>
                   <Insets right="50.0" />
                </HBox.margin>
