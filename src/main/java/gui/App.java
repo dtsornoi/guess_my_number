@@ -11,7 +11,7 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("gui/guessMyNumber.fxml"));
-        primaryStage.setTitle("Java Quiz Game");
+        primaryStage.setTitle("Gues My Number App");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
